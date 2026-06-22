@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pulse Utilities - A powerful Discord bot designed to enhance your server with moderation, utility, and fun features.">
-    <title>Pulse Utilities - Powerful Discord Bot</title>
+    <meta name="description" content="Pulse Utilities - A Discord bot for moderation, automod, verification, embeds, and server utility.">
+    <title>Pulse Utilities - Discord Bot</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -16,10 +16,8 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="#" class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-sm">A</span>
-                    </div>
-                    <span class="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Pulse Utilities</span>
+                    <img src="./img/blue_logo.webp" alt="Pulse Utilities logo" class="w-8 h-8 rounded-lg object-contain">
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Pulse Utilities</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -27,13 +25,13 @@
                     <a href="#features" class="text-gray-400 hover:text-white transition">Features</a>
                     <a href="#how-it-works" class="text-gray-400 hover:text-white transition">How It Works</a>
                     <a href="pages/commands.html" class="text-gray-400 hover:text-white transition">Commands</a>
-                    <a href="#stats" class="text-gray-400 hover:text-white transition">Stats</a>
+                    <a href="status.html" class="text-gray-400 hover:text-white transition">Status</a>
                 </div>
 
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#" class="btn-secondary px-6 py-2 rounded-lg text-sm font-medium">Support Server</a>
-                    <a href="#" class="btn-primary px-6 py-2 rounded-lg text-sm font-medium text-white">Invite Bot</a>
+                    <a href="https://discord.gg/your-invite-here" class="btn-secondary px-6 py-2 rounded-lg text-sm font-medium">Support Server</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="btn-primary px-6 py-2 rounded-lg text-sm font-medium text-white">Invite Bot</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -50,8 +48,8 @@
                     <a href="#features" class="block px-3 py-2 text-gray-400 hover:text-white">Features</a>
                     <a href="#how-it-works" class="block px-3 py-2 text-gray-400 hover:text-white">How It Works</a>
                     <a href="pages/commands.html" class="block px-3 py-2 text-gray-400 hover:text-white">Commands</a>
-                    <a href="#stats" class="block px-3 py-2 text-gray-400 hover:text-white">Stats</a>
-                    <a href="#" class="block px-3 py-2 btn-primary rounded-lg text-white text-center mt-2">Invite Bot</a>
+                    <a href="status.html" class="block px-3 py-2 text-gray-400 hover:text-white">Status</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="block px-3 py-2 btn-primary rounded-lg text-white text-center mt-2">Invite Bot</a>
                 </div>
             </div>
         </div>
@@ -61,50 +59,50 @@
     <section class="relative w-full min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <!-- Background Elements -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-            <div class="absolute top-40 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-            <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
 
         <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <!-- Badge -->
             <div class="inline-flex items-center space-x-2 bg-slate-800 bg-opacity-50 border border-slate-700 rounded-full px-4 py-2 mb-8">
                 <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
                 </span>
-                <span class="text-sm text-gray-300">Trusted by 10,000+ Servers</span>
+                <span class="text-sm text-gray-300">Now in early access</span>
             </div>
 
             <!-- Main Heading -->
             <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                <span class="section-title">The Discord Bot You've Been Waiting For</span>
+                <span class="section-title">Moderation, Verification, and Embeds — All in One Bot</span>
             </h1>
 
             <!-- Subheading -->
             <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                 Pulse Utilities combines powerful moderation, utility features, and fun commands into one seamless package. Perfect for servers of any size.
+                Pulse Utilities keeps your server organized without unnecessary clutter or paywalled features. Automod, verification, audit logging, and more — built to be simple to set up and easy to trust.
             </p>
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="#" class="btn-primary px-8 py-4 rounded-lg font-semibold text-white text-lg">Invite Bot Now</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="btn-primary px-8 py-4 rounded-lg font-semibold text-white text-lg">Invite Bot Now</a>
                 <a href="pages/commands.html" class="btn-secondary px-8 py-4 rounded-lg font-semibold text-white text-lg">View All Commands</a>
             </div>
 
-            <!-- Stats Preview -->
+            <!-- Quick Facts -->
             <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <div class="stat-card rounded-lg p-4">
-                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">10K+</div>
-                    <div class="text-sm text-gray-400">Servers</div>
+                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Free</div>
+                    <div class="text-sm text-gray-400">No paywalled features</div>
                 </div>
                 <div class="stat-card rounded-lg p-4">
-                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">50K+</div>
-                    <div class="text-sm text-gray-400">Users</div>
-                </div>
-                <div class="stat-card rounded-lg p-4">
-                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">100+</div>
+                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">30+</div>
                     <div class="text-sm text-gray-400">Commands</div>
+                </div>
+                <div class="stat-card rounded-lg p-4">
+                    <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">24/7</div>
+                    <div class="text-sm text-gray-400">Self-hosted uptime</div>
                 </div>
             </div>
         </div>
@@ -114,107 +112,105 @@
     <section id="features" class="py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title">Powerful Features</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Everything you need to manage, moderate, and entertain your Discord server</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title">What Pulse Utilities Does</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">A focused set of tools for moderation, safety, and day-to-day server management</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
-                        <svg class="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Advanced Moderation</h3>
-                    <p class="text-gray-400">Ban, kick, mute, and manage your members with powerful moderation tools. Auto-mod capabilities to keep your server safe.</p>
+                    <h3 class="text-xl font-bold mb-3">Full Moderation Toolkit</h3>
+                    <p class="text-gray-400">Ban, kick, timeout, warn, lock channels, and more — with a full audit log of every action taken.</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
-                        <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        <svg class="w-12 h-12 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Lightning Fast</h3>
-                    <p class="text-gray-400">Optimized for speed and performance. Commands execute instantly with zero lag or delays.</p>
+                    <h3 class="text-xl font-bold mb-3">Automod Built In</h3>
+                    <p class="text-gray-400">Catches spam, mass mentions, and invite links automatically, with escalating timeouts for repeat offenders.</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
-                        <svg class="w-12 h-12 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">99.9% Uptime</h3>
-                    <p class="text-gray-400">Hosted on reliable infrastructure. Always online, always ready to serve your community.</p>
+                    <h3 class="text-xl font-bold mb-3">One-Step Verification</h3>
+                    <p class="text-gray-400">Gate new members behind a single click-to-verify button, configured in one command.</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
-                        <svg class="w-12 h-12 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        <svg class="w-12 h-12 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Customizable</h3>
-                    <p class="text-gray-400">Tailor every aspect of the bot to your server's needs. Flexible settings and configurations.</p>
+                    <h3 class="text-xl font-bold mb-3">Custom Embeds</h3>
+                    <p class="text-gray-400">Build, edit, and delete rich embeds for announcements without needing a third-party tool.</p>
                 </div>
 
                 <!-- Feature 5 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
                         <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Economy System</h3>
-                    <p class="text-gray-400">Gamify your server with virtual currency, leveling system, and economy features.</p>
+                    <h3 class="text-xl font-bold mb-3">Both Slash & Prefix Commands</h3>
+                    <p class="text-gray-400">Use modern slash commands or classic prefix commands — your server, your choice, switchable anytime.</p>
                 </div>
 
                 <!-- Feature 6 -->
                 <div class="feature-card p-8 rounded-xl">
                     <div class="mb-4">
-                        <svg class="w-12 h-12 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                        <svg class="w-12 h-12 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Active Support</h3>
-                    <p class="text-gray-400">24/7 support team ready to help. Join our Discord community for tips and updates.</p>
+                    <h3 class="text-xl font-bold mb-3">Live Status Page</h3>
+                    <p class="text-gray-400">Real uptime tracking with 24h/7d/30d stats, so you always know if the bot's actually online.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-950 to-slate-900">
-        <div class="max-w-4xl mx-auto">
+    <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 bg-opacity-30">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title">How It Works</h2>
-                <p class="text-gray-400 text-lg">Get started in minutes with just three simple steps</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 section-title">Get Started in Minutes</h2>
+                <p class="text-gray-400 text-lg">No complicated setup — just invite and configure</p>
             </div>
 
-            <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+            <div class="grid md:grid-cols-3 gap-12">
                 <!-- Step 1 -->
-                <div class="relative">
+                <div>
                     <div class="flex flex-col items-center">
                         <div class="step-number mb-4">1</div>
                         <h3 class="text-xl font-bold mb-2">Invite the Bot</h3>
-                        <p class="text-gray-400 text-center">Click the invite button and authorize Pulse Utilities to access your server. Takes less than a minute.</p>
+                        <p class="text-gray-400 text-center">Click the invite button and add Pulse Utilities to your server in seconds.</p>
                     </div>
-                    <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-purple-500 to-transparent -z-10"></div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="relative">
+                <div>
                     <div class="flex flex-col items-center">
                         <div class="step-number mb-4">2</div>
-                        <h3 class="text-xl font-bold mb-2">Configure Settings</h3>
-                        <p class="text-gray-400 text-center">Set up your preferences using simple commands. Enable features that matter to your server.</p>
+                        <h3 class="text-xl font-bold mb-2">Run /setup</h3>
+                        <p class="text-gray-400 text-center">Configure log channels, verification, and moderator roles from one interactive panel.</p>
                     </div>
-                    <div class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-purple-500 to-transparent -z-10"></div>
                 </div>
 
                 <!-- Step 3 -->
@@ -229,47 +225,16 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section id="stats" class="py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Stat 1 -->
-                <div class="stat-card rounded-xl p-8 text-center">
-                    <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">10K+</div>
-                    <p class="text-gray-400">Servers Using Pulse Utilities</p>
-                </div>
-
-                <!-- Stat 2 -->
-                <div class="stat-card rounded-xl p-8 text-center">
-                    <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">50K+</div>
-                    <p class="text-gray-400">Active Users</p>
-                </div>
-
-                <!-- Stat 3 -->
-                <div class="stat-card rounded-xl p-8 text-center">
-                    <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">100+</div>
-                    <p class="text-gray-400">Unique Commands</p>
-                </div>
-
-                <!-- Stat 4 -->
-                <div class="stat-card rounded-xl p-8 text-center">
-                    <div class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">99.9%</div>
-                    <p class="text-gray-400">Uptime Guarantee</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900 to-blue-900 relative overflow-hidden">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-cyan-900 relative overflow-hidden">
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         </div>
-        
+
         <div class="max-w-4xl mx-auto text-center relative">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Server?</h2>
-            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Join many servers already using Pulse Utilities. Invite it to your server and start experiencing the difference today.</p>
-            <a href="#" class="btn-primary px-8 py-4 rounded-lg font-semibold text-white text-lg inline-block">Invite Pulse Utilities.</a>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Try Pulse Utilities?</h2>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Invite it to your server and see if it's a fit. No credit card, no premium tier, no catch.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="btn-primary px-8 py-4 rounded-lg font-semibold text-white text-lg inline-block">Invite Pulse Utilities</a>
         </div>
     </section>
 
@@ -280,12 +245,10 @@
                 <!-- Brand -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-sm">A</span>
-                        </div>
-                        <span class="text-lg font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Pulse Utilities</span>
+                        <img src="./img/blue_logo.webp" alt="Pulse Utilities logo" class="w-8 h-8 rounded-lg object-contain">
+                        <span class="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Pulse Utilities</span>
                     </div>
-                    <p class="text-gray-500 text-sm">The Discord bot for modern servers</p>
+                    <p class="text-gray-500 text-sm">Moderation, verification, and embeds — all in one bot.</p>
                 </div>
 
                 <!-- Product -->
@@ -294,8 +257,7 @@
                     <ul class="space-y-2 text-gray-500 text-sm">
                         <li><a href="pages/commands.html" class="hover:text-white transition">Commands</a></li>
                         <li><a href="#features" class="hover:text-white transition">Features</a></li>
-                        <li><a href="#" class="hover:text-white transition">Status</a></li>
-                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="status.html" class="hover:text-white transition">Status</a></li>
                     </ul>
                 </div>
 
@@ -303,14 +265,17 @@
                 <div>
                     <h3 class="font-semibold mb-4">Community</h3>
                     <ul class="space-y-2 text-gray-500 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Support Server</a></li>
-                        <li><a href="#" class="hover:text-white transition">Discord</a></li>
-                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
-                            <li><a href="https://github.com/Hadi-4100/" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="https://discord.gg/your-invite-here" class="hover:text-white transition">Support Server</a></li>
+                        <li><a href="https://github.com/Hadi-4100/" class="hover:text-white transition">Website template by Hadi-4100</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
                     <ul class="space-y-2 text-gray-500 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+                        <li><a href="tos.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -319,9 +284,7 @@
             <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm" id="copyright"></p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Twitter</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Discord</a>
-                    <a href="https://github.com/Hadi-4100/" class="text-gray-500 hover:text-white transition">GitHub</a>
+                    <a href="https://discord.gg/your-invite-here" class="text-gray-500 hover:text-white transition">Discord</a>
                 </div>
             </div>
         </div>
@@ -330,11 +293,11 @@
     <script>
         // Dynamic copyright year
         document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Pulse Utilities. All rights reserved.`;
-        
+
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
