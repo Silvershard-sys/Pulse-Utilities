@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aris Bot Commands - View all available commands organized by category.">
-    <title>Commands - Aris Bot</title>
+    <meta name="description" content="Pulse Utilities Commands - View all available commands organized by category.">
+    <title>Commands - Pulse Utilities</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -16,10 +16,8 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="../index.html" class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-sm">A</span>
-                    </div>
-                    <span class="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Aris Bot</span>
+                    <img src="../img/blue_logo.webp" alt="Pulse Utilities logo" class="w-8 h-8 rounded-lg object-contain">
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Pulse Utilities</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -31,7 +29,7 @@
 
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#" class="btn-primary px-6 py-2 rounded-lg text-sm font-medium text-white">Invite Bot</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="btn-primary px-6 py-2 rounded-lg text-sm font-medium text-white">Invite Bot</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -47,7 +45,7 @@
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="../index.html" class="block px-3 py-2 text-gray-400 hover:text-white">Home</a>
                     <a href="../index.html#features" class="block px-3 py-2 text-gray-400 hover:text-white">Features</a>
-                    <a href="#" class="block px-3 py-2 btn-primary rounded-lg text-white text-center mt-2">Invite Bot</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1517861161377333409&permissions=8&scope=bot%20applications.commands" class="block px-3 py-2 btn-primary rounded-lg text-white text-center mt-2">Invite Bot</a>
                 </div>
             </div>
         </div>
@@ -57,11 +55,11 @@
     <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold mb-4 section-title">Bot Commands</h1>
-            <p class="text-xl text-gray-400 max-w-2xl">Discover all available commands organized by category. Each command is designed to enhance your server's functionality.</p>
-            
+            <p class="text-xl text-gray-400 max-w-2xl">Every command Pulse Utilities currently supports. Slash commands shown below; most also work as prefix commands.</p>
+
             <!-- Search Bar -->
             <div class="mt-8">
-                <input type="text" id="search-input" placeholder="Search commands..." class="w-full bg-slate-800 border border-slate-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 transition">
+                <input type="text" id="search-input" placeholder="Search commands..." class="w-full bg-slate-800 border border-slate-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition">
             </div>
         </div>
     </section>
@@ -70,116 +68,250 @@
     <section class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
 
-            <!-- MODERATION CATEGORY -->
+            <!-- MODERATION & AUTOMOD CATEGORY -->
             <div class="mb-20" data-category="moderation">
                 <div class="flex items-center mb-8">
                     <div class="category-badge rounded-lg px-4 py-2 mr-4">
-                        <span class="font-semibold">⚔️ Moderation</span>
+                        <span class="font-semibold">🛡️ Moderation & Automod</span>
                     </div>
-                    <div class="h-px flex-1 bg-gradient-to-r from-purple-500 to-transparent"></div>
+                    <div class="h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Command Card: Ban -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/ban</h3>
-                                <p class="text-gray-400 text-sm mt-1">Ban a member from the server</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/ban @user [reason]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Ban Members</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/ban</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Ban a member from the server</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/ban &lt;user&gt; [reason]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Ban Members</span>
                     </div>
 
-                    <!-- Command Card: Kick -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/kick</h3>
-                                <p class="text-gray-400 text-sm mt-1">Kick a member from the server</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/kick @user [reason]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Kick Members</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/kick</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Kick a member from the server</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/kick &lt;user&gt; [reason]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Kick Members</span>
                     </div>
 
-                    <!-- Command Card: Mute -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/mute</h3>
-                                <p class="text-gray-400 text-sm mt-1">Mute a member temporarily</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/mute @user <time> [reason]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Moderate Members</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/unban</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Unban a user by ID</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/unban &lt;user_id&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Ban Members</span>
                     </div>
 
-                    <!-- Command Card: Warn -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/warn</h3>
-                                <p class="text-gray-400 text-sm mt-1">Issue a warning to a member</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/warn @user [reason]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Moderate Members</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/softban</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Kick a member and purge their recent messages</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/softban &lt;user&gt; [reason]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Ban Members</span>
                     </div>
 
-                    <!-- Command Card: Purge -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/purge</h3>
-                                <p class="text-gray-400 text-sm mt-1">Delete messages in bulk</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/purge <amount></code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Manage Messages</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/timeout</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Timeout a member</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/timeout &lt;user&gt; &lt;minutes&gt; [reason]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Moderate Members</span>
                     </div>
 
-                    <!-- Command Card: Lock -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/lock</h3>
-                                <p class="text-gray-400 text-sm mt-1">Lock a channel from messages</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/lock [channel]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Manage Channels</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/warn</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Warn a member</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/warn &lt;user&gt; &lt;reason&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Moderate Members</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/warnings</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">View a member's warnings</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/warnings &lt;user&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Moderate Members</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/clearwarnings</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Clear all warnings for a member</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/clearwarnings &lt;user&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Moderate Members</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/purge</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Bulk delete recent messages in this channel</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/purge &lt;amount&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/lock</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Lock a channel, preventing @everyone from sending messages</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/lock [channel] [reason]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Channels</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/unlock</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Unlock a previously locked channel</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/unlock [channel]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Channels</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/slowmode</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Set slowmode for this (or another) channel</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/slowmode &lt;seconds&gt; [channel]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Channels</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/nickname</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Force-set (or reset) a member's nickname</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/nickname &lt;user&gt; [nickname]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Nicknames</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/automod</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Toggle and tune automod filters: spam, mass mentions, invite links</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/automod toggle | config | status</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Server</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/auditlog</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Pull recent moderation actions for this server</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/auditlog [amount] [include_joins_leaves]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Moderate Members</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VERIFICATION CATEGORY -->
+            <div class="mb-20" data-category="verification">
+                <div class="flex items-center mb-8">
+                    <div class="category-badge rounded-lg px-4 py-2 mr-4">
+                        <span class="font-semibold">✅ Verification</span>
+                    </div>
+                    <div class="h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/verify-setup</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Configure the verification channel, role, and message in one step</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/verify-setup &lt;channel&gt; &lt;role&gt; [message]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Server</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/verify-status</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Check if a member is verified</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/verify-status [user]</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/reverify</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Remove a member's verified role and force them back through the gate</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/reverify &lt;user&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONFIGURATION CATEGORY -->
+            <div class="mb-20" data-category="configuration">
+                <div class="flex items-center mb-8">
+                    <div class="category-badge rounded-lg px-4 py-2 mr-4">
+                        <span class="font-semibold">⚙️ Configuration</span>
+                    </div>
+                    <div class="h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/setup</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Configure all core settings from one interactive panel</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/setup</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Server</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/config</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Configure the log channel, welcome channel, or prefix individually</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/config logchannel | welcomechannel | prefix</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Server</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/prefix</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">View or change the prefix used for prefix commands</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/prefix [new_prefix]</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">View: anyone · Change: Manage Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMBEDS CATEGORY -->
+            <div class="mb-20" data-category="embeds">
+                <div class="flex items-center mb-8">
+                    <div class="category-badge rounded-lg px-4 py-2 mr-4">
+                        <span class="font-semibold">🖼️ Embeds</span>
+                    </div>
+                    <div class="h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/embed create</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Send a new embed</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/embed create &lt;title&gt; &lt;description&gt; [color] [channel]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/embed edit</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Edit an embed the bot previously sent</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/embed edit &lt;message_id&gt; [title] [description] [color]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/embed delete</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Delete an embed the bot previously sent</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/embed delete &lt;message_id&gt;</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/announce</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Quickly post an announcement embed without the full embed builder</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/announce &lt;message&gt; [channel]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
                     </div>
                 </div>
             </div>
@@ -190,398 +322,119 @@
                     <div class="category-badge rounded-lg px-4 py-2 mr-4">
                         <span class="font-semibold">🔧 Utility</span>
                     </div>
-                    <div class="h-px flex-1 bg-gradient-to-r from-purple-500 to-transparent"></div>
+                    <div class="h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Command Card: Help -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/help</h3>
-                                <p class="text-gray-400 text-sm mt-1">Show all available commands</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/help [command]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/help</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">List available Pulse Utilities commands</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/help [command]</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
 
-                    <!-- Command Card: Info -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/info</h3>
-                                <p class="text-gray-400 text-sm mt-1">Get bot information</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/info</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/ping</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Check the bot's latency</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/ping</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
 
-                    <!-- Command Card: Ping -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/ping</h3>
-                                <p class="text-gray-400 text-sm mt-1">Check bot latency</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/ping</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/serverinfo</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Show detailed information about this server</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/serverinfo</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
 
-                    <!-- Command Card: Avatar -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/avatar</h3>
-                                <p class="text-gray-400 text-sm mt-1">Display user's avatar</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/avatar [@user]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/userinfo</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Show information about a member</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/userinfo [user]</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
 
-                    <!-- Command Card: Userinfo -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/userinfo</h3>
-                                <p class="text-gray-400 text-sm mt-1">Get user information</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/userinfo [@user]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/avatar</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Fetch a member's avatar</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/avatar [user]</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
 
-                    <!-- Command Card: Serverinfo -->
                     <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/serverinfo</h3>
-                                <p class="text-gray-400 text-sm mt-1">Get server information</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/serverinfo</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
+                        <h3 class="text-lg font-bold text-white">/remindme</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Set a personal reminder</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/remindme &lt;when&gt; &lt;message&gt;</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/poll</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Start a quick yes/no or multi-option poll</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/poll &lt;question&gt; [option1] [option2] ...</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/say</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Make the bot send a message</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/say &lt;message&gt; [channel]</code>
+                        <span class="text-xs permission-badge text-red-300 px-2 py-1 rounded">Requires: Manage Messages</span>
+                    </div>
+
+                    <div class="command-card rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-white">/status</h3>
+                        <p class="text-gray-400 text-sm mt-1 mb-4">Check Pulse Utilities' current health and stats</p>
+                        <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
+                        <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300 mb-4">/status</code>
+                        <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Anyone can use</span>
                     </div>
                 </div>
             </div>
 
-            <!-- FUN CATEGORY -->
-            <div class="mb-20" data-category="fun">
-                <div class="flex items-center mb-8">
-                    <div class="category-badge rounded-lg px-4 py-2 mr-4">
-                        <span class="font-semibold">🎮 Fun</span>
-                    </div>
-                    <div class="h-px flex-1 bg-gradient-to-r from-purple-500 to-transparent"></div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Command Card: Roll -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/roll</h3>
-                                <p class="text-gray-400 text-sm mt-1">Roll a dice (1-100)</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/roll</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Flip -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/flip</h3>
-                                <p class="text-gray-400 text-sm mt-1">Flip a coin</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/flip</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Joke -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/joke</h3>
-                                <p class="text-gray-400 text-sm mt-1">Tell a random joke</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/joke</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: 8ball -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/8ball</h3>
-                                <p class="text-gray-400 text-sm mt-1">Ask the magic 8ball</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/8ball <question></code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Meme -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/meme</h3>
-                                <p class="text-gray-400 text-sm mt-1">Get a random meme</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/meme</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Pet -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/pet</h3>
-                                <p class="text-gray-400 text-sm mt-1">Pet a user</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/pet [@user]</code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-green-900 bg-opacity-50 text-green-300 px-2 py-1 rounded">Public</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ADMIN CATEGORY -->
-            <div data-category="admin">
-                <div class="flex items-center mb-8">
-                    <div class="category-badge rounded-lg px-4 py-2 mr-4">
-                        <span class="font-semibold">👨‍💼 Admin</span>
-                    </div>
-                    <div class="h-px flex-1 bg-gradient-to-r from-purple-500 to-transparent"></div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Command Card: Prefix -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/prefix</h3>
-                                <p class="text-gray-400 text-sm mt-1">Set server prefix</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/prefix <new-prefix></code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Manage Server</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Welcome -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/welcome</h3>
-                                <p class="text-gray-400 text-sm mt-1">Set welcome message</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/welcome <message></code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Manage Server</span>
-                        </div>
-                    </div>
-
-                    <!-- Command Card: Role -->
-                    <div class="command-card rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-lg font-bold text-white">/role</h3>
-                                <p class="text-gray-400 text-sm mt-1">Manage member roles</p>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 font-semibold mb-2">Usage:</p>
-                            <code class="text-sm bg-slate-900 rounded p-2 block text-cyan-300">/role add @user <role></code>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs bg-blue-900 bg-opacity-50 text-blue-300 px-2 py-1 rounded">Requires: Manage Roles</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-900 to-blue-900 relative overflow-hidden mt-20">
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-        </div>
-        
-        <div class="max-w-4xl mx-auto text-center relative">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Start Using Aris Bot Today</h2>
-            <p class="text-xl text-gray-200 mb-8">Invite the bot to your server and unlock all these powerful commands.</p>
-            <a href="#" class="btn-primary px-8 py-4 rounded-lg font-semibold text-white text-lg inline-block">Invite Aris Bot</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="border-b border-slate-800 pb-8 mb-8">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <!-- Brand -->
-                    <div>
-                        <div class="flex items-center space-x-2 mb-4">
-                            <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                                <span class="text-white font-bold text-sm">A</span>
-                            </div>
-                            <span class="text-lg font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Aris Bot</span>
-                        </div>
-                        <p class="text-gray-500 text-sm">The Discord bot for modern servers</p>
-                    </div>
-
-                    <!-- Product -->
-                    <div>
-                        <h3 class="font-semibold mb-4">Product</h3>
-                        <ul class="space-y-2 text-gray-500 text-sm">
-                            <li><a href="#" class="hover:text-white transition">Commands</a></li>
-                            <li><a href="../index.html#features" class="hover:text-white transition">Features</a></li>
-                            <li><a href="#" class="hover:text-white transition">Pricing</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Community -->
-                    <div>
-                        <h3 class="font-semibold mb-4">Community</h3>
-                        <ul class="space-y-2 text-gray-500 text-sm">
-                            <li><a href="#" class="hover:text-white transition">Support Server</a></li>
-                            <li><a href="#" class="hover:text-white transition">Discord</a></li>
-                            <li><a href="#" class="hover:text-white transition">GitHub</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Legal -->
-                    <div>
-                        <h3 class="font-semibold mb-4">Legal</h3>
-                        <ul class="space-y-2 text-gray-500 text-sm">
-                            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
-                            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom -->
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm" id="copyright"></p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-white transition">Twitter</a>
-                    <a href="#" class="text-gray-500 hover:text-white transition">Discord</a>
-                    <a href="https://github.com/Hadi-4100/" class="text-gray-500 hover:text-white transition">GitHub</a>
-                </div>
-            </div>
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-500 text-sm" id="copyright"></p>
         </div>
     </footer>
 
     <script>
-        // Dynamic copyright year
-        document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Aris Bot. All rights reserved.`;
-        
-        // Search functionality
-        const searchInput = document.getElementById('search-input');
-        
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const commandCards = document.querySelectorAll('.command-card');
-            const categories = document.querySelectorAll('[data-category]');
-            
-            // Show/hide command cards based on search
-            commandCards.forEach(card => {
-                const commandName = card.querySelector('h3').textContent.toLowerCase();
-                const commandDesc = card.querySelector('p').textContent.toLowerCase();
-                
-                if (commandName.includes(searchTerm) || commandDesc.includes(searchTerm)) {
-                    card.parentElement.parentElement.style.display = 'grid';
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-        
-        // Mobile menu toggle
+        document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} Pulse Utilities. All rights reserved.`;
+
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Live search across all command cards
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', () => {
+            const term = searchInput.value.toLowerCase();
+            document.querySelectorAll('.command-card').forEach((card) => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(term) ? '' : 'none';
+            });
+
+            // Hide whole category sections if every card inside is hidden
+            document.querySelectorAll('[data-category]').forEach((section) => {
+                const visibleCards = [...section.querySelectorAll('.command-card')].some(
+                    (c) => c.style.display !== 'none'
+                );
+                section.style.display = visibleCards ? '' : 'none';
+            });
         });
     </script>
 
